@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>발렌타인 데이</title>
+</head>
+<body>
+    <div id="cover">
+        <button id="start-button">시작하기</button> </div>
+   
+        <div id="game-screen" class="hidden">
+        <div id="background"></div>
+        <button id="retry-button" class="hidden">다시하기</button>
+        <div id="dialogue-box">
+            <div id="character-name" class="hidden"></div> <!-- 이름창 -->
+            <div id="dialogue-wrapper"> <!-- 대사창 감싸는 div -->
+                <p id="dialogue"></p> <!-- 대사 -->
+            </div>
+            <button id="next-button" class="hidden" style="position: absolute; right: 10px; bottom: 10px;">
+                &#9654; <!-- HTML 문자 코드로 화살표 -->
+            </button>
+        </div>
+    </div>
+
+    <div id="ending-screen" class="hidden">
+        <h1>게임이 종료되었습니다.</h1>
+        <button id="retry-button-finish">다시하기</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
